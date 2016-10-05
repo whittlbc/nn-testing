@@ -51,7 +51,7 @@ def sigmoid(x, deriv=False):
 # Initialize layer1
 l1 = None
 
-# Forward propagation
+# Forward propagation (aka. feed forward)
 for i in xrange(10000):
 	# layer0 is equal to the input dataset. Gonna process all 4 training examples
 	# at the same time - aka. "full batch" training.
