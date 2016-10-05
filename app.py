@@ -20,11 +20,11 @@ np.random.seed(1)
 syn0 = 2 * np.random.random((3, 1)) - 1
 
 
-# Define your sigmoid function
+# Define your sigmoid function. The sigmoid function is such a good candidate for
+# neural networks because it's naturally non-linear, meaning it can give us *probability* as output.
 def sigmoid(x, deriv=False):
 	# derivative of sigmoid function
-	if deriv:
-		return x * (1 - x)
+	if deriv: return x * (1 - x)
 	
 	# regular sigmoid function: 1/(1 + e^-x)
 	return 1 / (1 + np.exp(-x))
